@@ -5,26 +5,18 @@ import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function about() {
   return (
     <>
       <Head>
-        <title>test | home</title>
+        <title>test | about</title>
         <meta name="description" content="home page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <h1 className={styles.title}>
-          Ir a{" "}
-          <Link
-            href={{
-              pathname: "/about",
-              query: { postalCode: "01030", colonia: "magueyes" },
-            }}
-          >
-            About
-          </Link>
+          Ir a <Link href="/">Home</Link>
         </h1>
       </main>
     </>
